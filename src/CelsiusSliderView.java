@@ -9,8 +9,8 @@ public class CelsiusSliderView {
     private final Slider celsiusSlider;
     private final VBox view;
 
-    public CelsiusSliderView() {
-        model = new TemperatureModel();
+    public CelsiusSliderView(TemperatureModel model) {
+        this.model = model;
 
         celsiusSlider = new Slider(-100, 100, 0);
         celsiusSlider.setShowTickMarks(true);
@@ -31,7 +31,8 @@ public class CelsiusSliderView {
         return view;
     }
 
-    public TemperatureModel getModel() {
-        return model;
-    }
+    // Optionally, you can expose a method to update the model directly if needed
+    // public TemperatureModel getModel() {
+    //    return model;
+    // }
 }

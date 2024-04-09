@@ -1,9 +1,9 @@
-import javafx.util.converter.DoubleStringConverter;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-
+import javafx.util.converter.DoubleStringConverter;
 
 public class FahrenheitView {
 
@@ -13,25 +13,28 @@ public class FahrenheitView {
     private final VBox view;
 
     public FahrenheitView(TemperatureModel model) {
-        
+
         fahrenheitField = new TextField();
         fahrenheitField.setPromptText("Enter Fahrenheit Temperature");
 
         raiseButton = new Button("Raise");
         lowerButton = new Button("Lower");
 
-        VBox box = new VBox(10, fahrenheitField, raiseButton, lowerButton);
+        HBox buttonBox = new HBox(10, raiseButton, lowerButton);
+        buttonBox.setAlignment(Pos.CENTER);
+
+        VBox box = new VBox(10, fahrenheitField, buttonBox);
         box.setAlignment(Pos.CENTER);
-        
+
         view = box;
 
         DoubleStringConverter converter = new DoubleStringConverter();
-        
+
         raiseButton.setOnAction(e -> {
             double fahrenheitValue = Double.parseDouble(fahrenheitField.getText());
             model.setFahrenheit(fahrenheitValue + 1);
         });
-        
+
         lowerButton.setOnAction(e -> {
             double fahrenheitValue = Double.parseDouble(fahrenheitField.getText());
             model.setFahrenheit(fahrenheitValue - 1);

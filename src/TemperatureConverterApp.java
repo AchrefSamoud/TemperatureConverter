@@ -12,7 +12,7 @@ public class TemperatureConverterApp extends Application {
 
         CelsiusView celsiusView = new CelsiusView(model);
         FahrenheitView fahrenheitView = new FahrenheitView(model);
-        CelsiusSliderView celsiusSliderView = new CelsiusSliderView();
+        CelsiusSliderView celsiusSliderView = new CelsiusSliderView(model);
 
         VBox root = new VBox(20, celsiusView.getView(), fahrenheitView.getView(), celsiusSliderView.getView());
         root.setAlignment(Pos.CENTER);

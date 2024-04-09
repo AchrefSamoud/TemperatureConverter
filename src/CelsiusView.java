@@ -1,11 +1,9 @@
-import javafx.util.converter.DoubleStringConverter;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-
-
-
+import javafx.util.converter.DoubleStringConverter;
 
 public class CelsiusView {
 
@@ -21,18 +19,21 @@ public class CelsiusView {
         raiseButton = new Button("Raise");
         lowerButton = new Button("Lower");
 
-        VBox box = new VBox(10, celsiusField, raiseButton, lowerButton);
+        HBox buttonBox = new HBox(10, raiseButton, lowerButton);
+        buttonBox.setAlignment(Pos.CENTER);
+
+        VBox box = new VBox(10, celsiusField, buttonBox);
         box.setAlignment(Pos.CENTER);
 
         view = box;
 
         DoubleStringConverter converter = new DoubleStringConverter();
-        
+
         raiseButton.setOnAction(e -> {
             double celsiusValue = Double.parseDouble(celsiusField.getText());
             model.setCelsius(celsiusValue + 1);
         });
-        
+
         lowerButton.setOnAction(e -> {
             double celsiusValue = Double.parseDouble(celsiusField.getText());
             model.setCelsius(celsiusValue - 1);
