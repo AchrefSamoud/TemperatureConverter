@@ -8,12 +8,11 @@ public class TemperatureModel {
     public TemperatureModel() {
         // Bindings for converting between Celsius and Fahrenheit
         celsius.addListener((observable, oldValue, newValue) ->
-                fahrenheit.set(((double) newValue * 9 / 5) + 32));
+        fahrenheit.set((newValue.doubleValue() * 9 / 5) + 32));
 
-        fahrenheit.addListener((observable, oldValue, newValue) ->
-                celsius.set(((double) newValue - 32) * 5 / 9));
-    }
-
+fahrenheit.addListener((observable, oldValue, newValue) ->
+        celsius.set((newValue.doubleValue() - 32) * 5 / 9));
+}
     public double getCelsius() {
         return celsius.get();
     }

@@ -4,6 +4,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.util.converter.DoubleStringConverter;
+import javafx.scene.input.KeyCode;
 
 public class CelsiusView {
 
@@ -45,12 +46,14 @@ public class CelsiusView {
         });
 
         // Listener to update the model when the text field changes
-        celsiusField.textProperty().addListener((observable, oldValue, newValue) -> {
-            if (!newValue.isEmpty()) {
-                model.setCelsius(converter.fromString(newValue));
+        celsiusField.setOnKeyPressed(event -> {
+            if (event.getCode() == KeyCode.ENTER) {
+                String newValue = celsiusField.getText();
+                if (!newValue.isEmpty()) {
+                    model.setCelsius(converter.fromString(newValue));
+                }
             }
-        });
-    }
+        });}
 
     public VBox getView() {
         return view;

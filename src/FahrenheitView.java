@@ -4,6 +4,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.util.converter.DoubleStringConverter;
+import javafx.scene.input.KeyCode;
 
 public class FahrenheitView {
 
@@ -45,10 +46,13 @@ public class FahrenheitView {
             fahrenheitField.setText(converter.toString(newValue.doubleValue()));
         });
 
-        // Listener to update the model when the text field changes
-        fahrenheitField.textProperty().addListener((observable, oldValue, newValue) -> {
-            if (!newValue.isEmpty()) {
-                model.setFahrenheit(converter.fromString(newValue));
+        // Listener to update the model when I hit enter in the text field
+        fahrenheitField.setOnKeyPressed(event -> {
+            if (event.getCode() == KeyCode.ENTER) {
+                String newValue = fahrenheitField.getText();
+                if (!newValue.isEmpty()) {
+                    model.setFahrenheit(converter.fromString(newValue));
+                }
             }
         });
     }
