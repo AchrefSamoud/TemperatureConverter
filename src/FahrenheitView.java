@@ -3,8 +3,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.util.converter.DoubleStringConverter;
-import javafx.scene.input.KeyCode;
+
 
 public class FahrenheitView {
 
@@ -12,8 +11,10 @@ public class FahrenheitView {
     private final Button raiseButton;
     private final Button lowerButton;
     private final VBox view;
+    private final TemperatureController controller;
 
-    public FahrenheitView(TemperatureModel model) {
+    public FahrenheitView(TemperatureModel model, TemperatureController controller) {
+        this.controller = controller;
 
         fahrenheitField = new TextField();
         fahrenheitField.setPromptText("Enter Fahrenheit Temperature");
@@ -29,32 +30,7 @@ public class FahrenheitView {
 
         view = box;
 
-        DoubleStringConverter converter = new DoubleStringConverter();
-
-        raiseButton.setOnAction(e -> {
-            double fahrenheitValue = Double.parseDouble(fahrenheitField.getText());
-            model.setFahrenheit(fahrenheitValue + 1);
-        });
-
-        lowerButton.setOnAction(e -> {
-            double fahrenheitValue = Double.parseDouble(fahrenheitField.getText());
-            model.setFahrenheit(fahrenheitValue - 1);
-        });
-
-        // Listener to update the text field when the model changes
-        model.fahrenheitProperty().addListener((observable, oldValue, newValue) -> {
-            fahrenheitField.setText(converter.toString(newValue.doubleValue()));
-        });
-
-        // Listener to update the model when I hit enter in the text field
-        fahrenheitField.setOnKeyPressed(event -> {
-            if (event.getCode() == KeyCode.ENTER) {
-                String newValue = fahrenheitField.getText();
-                if (!newValue.isEmpty()) {
-                    model.setFahrenheit(converter.fromString(newValue));
-                }
-            }
-        });
+        controller.attachFahrenheitView(fahrenheitField, raiseButton, lowerButton);
     }
 
     public VBox getView() {

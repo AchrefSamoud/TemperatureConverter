@@ -5,12 +5,12 @@ import javafx.scene.layout.VBox;
 
 public class CelsiusSliderView {
 
-    private final TemperatureModel model;
     private final Slider celsiusSlider;
     private final VBox view;
+    private final TemperatureController controller;
 
-    public CelsiusSliderView(TemperatureModel model) {
-        this.model = model;
+    public CelsiusSliderView(TemperatureModel model, TemperatureController controller) {
+        this.controller = controller;
 
         celsiusSlider = new Slider(-100, 100, 0);
         celsiusSlider.setShowTickMarks(true);
@@ -25,14 +25,12 @@ public class CelsiusSliderView {
 
         // Bindings
         celsiusSlider.valueProperty().bindBidirectional(model.celsiusProperty());
+
+        // Attach controller
+        controller.attachCelsiusSliderView(celsiusSlider);
     }
 
     public VBox getView() {
         return view;
     }
-
-    // Optionally, you can expose a method to update the model directly if needed
-    // public TemperatureModel getModel() {
-    //    return model;
-    // }
 }

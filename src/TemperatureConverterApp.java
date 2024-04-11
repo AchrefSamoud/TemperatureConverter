@@ -9,10 +9,11 @@ public class TemperatureConverterApp extends Application {
     @Override
     public void start(Stage primaryStage) {
         TemperatureModel model = new TemperatureModel();
+        TemperatureController controller = new TemperatureController(model);
 
-        CelsiusView celsiusView = new CelsiusView(model);
-        FahrenheitView fahrenheitView = new FahrenheitView(model);
-        CelsiusSliderView celsiusSliderView = new CelsiusSliderView(model);
+        CelsiusView celsiusView = new CelsiusView(model, controller);
+        FahrenheitView fahrenheitView = new FahrenheitView(model, controller);
+        CelsiusSliderView celsiusSliderView = new CelsiusSliderView(model, controller);
 
         VBox root = new VBox(20, celsiusView.getView(), fahrenheitView.getView(), celsiusSliderView.getView());
         root.setAlignment(Pos.CENTER);
