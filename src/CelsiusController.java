@@ -1,7 +1,4 @@
 // TemperatureConverterController.java
-
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.input.KeyCode;
 import javafx.util.converter.DoubleStringConverter;
 
