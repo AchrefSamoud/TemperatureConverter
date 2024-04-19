@@ -1,0 +1,22 @@
+{
+  "MVC": {
+    "decision1": {
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitView.java",
+      "firstLine": 16,
+      "lastLine": 35,
+      "description": "The Temperature Converter project follows the Model-View-Controller (MVC) architectural pattern to separate concerns and maintain code organization. The Model (TemperatureModel) manages temperature data and logic, the Views (CelsiusView, FahrenheitView, CelsiusSliderView) display temperature information, and the Controller (TemperatureController) mediates interactions between the Model and Views, ensuring data consistency and synchronization.",
+      "constraints": [
+        "The changes on the Fahrenheit constructor may affect system's behaviour"
+      ]
+    },
+    "decision2": {
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\CelsiusView.java",
+      "firstLine": 17,
+      "lastLine": 23,
+      "description": "You should pay attention",
+      "constraints": [
+        "Celsius View"
+      ]
+    }
+  }
+}

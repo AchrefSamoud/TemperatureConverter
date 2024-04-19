@@ -3,14 +3,24 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.layout.VBox;
 
-public class CelsiusSliderView {
+/**
+ * This class represents a view component for a Celsius slider in a temperature converter application.
+ * It extends the VBox class and provides methods to access the Celsius slider and the view itself.
+ */
+public class CelsiusSliderView extends VBox {
 
     private final Slider celsiusSlider;
     private final VBox view;
-    private final TemperatureController controller;
 
-    public CelsiusSliderView(TemperatureModel model, TemperatureController controller) {
-        this.controller = controller;
+    /**
+     * Constructs a CelsiusSliderView object with the specified TemperatureModel.
+     * Initializes the Celsius slider with default values and sets up its properties.
+     * Binds the value of the Celsius slider to the celsiusProperty of the TemperatureModel.
+     * Adds the Celsius slider to the view.
+     *
+     * @param model the TemperatureModel to bind the Celsius slider value to
+     */
+    public CelsiusSliderView(TemperatureModel model) {
 
         celsiusSlider = new Slider(-100, 100, 0);
         celsiusSlider.setShowTickMarks(true);
@@ -26,11 +36,24 @@ public class CelsiusSliderView {
         // Bindings
         celsiusSlider.valueProperty().bindBidirectional(model.celsiusProperty());
 
-        // Attach controller
-        controller.attachCelsiusSliderView(celsiusSlider);
+        getChildren().addAll(celsiusSlider);
     }
 
+    /**
+     * Returns the view component containing the Celsius slider.
+     *
+     * @return the view component
+     */
     public VBox getView() {
         return view;
+    }
+
+    /**
+     * Returns the Celsius slider.
+     *
+     * @return the Celsius slider
+     */
+    public Slider getCelsiusSlider() {
+        return celsiusSlider;
     }
 }

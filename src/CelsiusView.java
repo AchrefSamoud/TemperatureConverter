@@ -1,40 +1,66 @@
-import javafx.geometry.Pos;
+
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
 
+import javafx.util.converter.DoubleStringConverter;
 
-public class CelsiusView {
+/**
+ * The CelsiusView class represents a view component for displaying and interacting with Celsius temperature values.
+ * It extends the VBox class to organize its child nodes vertically.
+ */
+public class CelsiusView extends VBox {
+    private TextField celsiusTextField;
+    private TextField fahrenheitTextField;
+    private Button raiseButton;
+    private Button lowerButton;
+    private DoubleStringConverter converter;
 
-    private final TextField celsiusField;
-    private final Button raiseButton;
-    private final Button lowerButton;
-    private final VBox view;
-    private final TemperatureController controller;
+    /**
+     * Constructs a new CelsiusView object with the specified TemperatureModel.
+     *
+     * @param model The TemperatureModel object to bind the view to.
+     */
+    public CelsiusView(TemperatureModel model) {
+        Label celsiusLabel = new Label("Celsius:");
+        celsiusTextField = new TextField();
+        this.raiseButton = new Button("Raise");
+        this.lowerButton = new Button("Lower");
 
-    public CelsiusView(TemperatureModel model, TemperatureController controller) {
-        this.controller = controller;
+        this.converter = new DoubleStringConverter();
 
-        celsiusField = new TextField();
-        celsiusField.setPromptText("Enter Celsius Temperature");
+        // Bind result label to model's Fahrenheit property
+        model.celsiusProperty().addListener((observable, oldValue, newValue) ->
+                celsiusTextField.setText(converter.toString(newValue.doubleValue())));
 
-        raiseButton = new Button("Raise");
-        lowerButton = new Button("Lower");
-
-        HBox buttonBox = new HBox( 10, raiseButton, lowerButton);
-        buttonBox.setAlignment(Pos.CENTER);
-
-        VBox box = new VBox(10,new Label("Celsius Field"), celsiusField, buttonBox);
-        box.setAlignment(Pos.CENTER);
-
-        view = box;
-
-        controller.attachCelsiusView(celsiusField, raiseButton, lowerButton);
+        getChildren().addAll(celsiusLabel, celsiusTextField, raiseButton, lowerButton);
     }
 
-    public VBox getView() {
-        return view;
+    /**
+     * Returns the TextField component used for entering Celsius temperature values.
+     *
+     * @return The TextField component for Celsius temperature input.
+     */
+    public TextField getCelsiusTextField() {
+        return celsiusTextField;
+    }
+
+    /**
+     * Returns the Button component used for raising the Celsius temperature.
+     *
+     * @return The Button component for raising the Celsius temperature.
+     */
+    public Button getRaiseButton() {
+        return raiseButton;
+    }
+
+    /**
+     * Returns the Button component used for lowering the Celsius temperature.
+     *
+     * @return The Button component for lowering the Celsius temperature.
+     */
+    public Button getLowerButton() {
+        return lowerButton;
     }
 }
