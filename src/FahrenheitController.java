@@ -6,6 +6,9 @@ import javafx.util.converter.DoubleStringConverter;
  */
 // TemperatureConverterController.java
 
+
+
+
 public class FahrenheitController {
     private FahrenheitView view;
     private TemperatureModel model;

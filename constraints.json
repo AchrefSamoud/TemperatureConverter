@@ -1,22 +1,263 @@
 {
   "MVC": {
-    "decision1": {
-      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitView.java",
-      "firstLine": 16,
-      "lastLine": 35,
-      "description": "The Temperature Converter project follows the Model-View-Controller (MVC) architectural pattern to separate concerns and maintain code organization. The Model (TemperatureModel) manages temperature data and logic, the Views (CelsiusView, FahrenheitView, CelsiusSliderView) display temperature information, and the Controller (TemperatureController) mediates interactions between the Model and Views, ensuring data consistency and synchronization.",
-      "constraints": [
-        "The changes on the Fahrenheit constructor may affect system's behaviour"
-      ]
+    "fargment1": {
+      "fragmentName": "Celsius Controller",
+      "fragmentRole": " handles user interactions for the celsius view and updates the model",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\CelsiusController.java",
+      "firstLine": 26,
+      "lastLine": 42
     },
-    "decision2": {
+    "fargment2": {
+      "fragmentName": "Fahrenheit Controller",
+      "fragmentRole": "handles user interactions for the fahrenheit view and updates the model",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitController.java",
+      "firstLine": 22,
+      "lastLine": 48
+    },
+    "fargment3": {
+      "fragmentName": "Temperature Model",
+      "fragmentRole": "Present application data and Logic ",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\TemperatureModel.java",
+      "firstLine": 17,
+      "lastLine": 23
+    },
+    "fargment4": {
+      "fragmentName": "sdsd",
+      "fragmentRole": "dsds",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitController.java",
+      "firstLine": 33,
+      "lastLine": 37
+    },
+    "fargment5": {
+      "fragmentName": "aa",
+      "fragmentRole": "aa",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitController.java",
+      "firstLine": 12,
+      "lastLine": 16
+    },
+    "fargment6": {
+      "fragmentName": "aa",
+      "fragmentRole": "aa",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitController.java",
+      "firstLine": 12,
+      "lastLine": 16
+    },
+    "fargment7": {
+      "fragmentName": "aa",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitController.java",
+      "firstLine": 12,
+      "lastLine": 16
+    },
+    "fargment8": {
+      "fragmentName": "aaa",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\TemperatureModel.java",
+      "firstLine": 9,
+      "lastLine": 12
+    },
+    "fargment9": {
+      "fragmentName": "Ioo",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\CelsiusView.java",
+      "firstLine": 13,
+      "lastLine": 19
+    },
+    "description": "The application uses the MVC pattern to separate concerns between data management (model), user interface (view), and user input handling (controller). The embedded Observer pattern ensures that changes in the model automatically update the views",
+    "constraints": [
+      "Controller: Handles user input and updates the model.",
+      "View: Displays data and allows user interaction.",
+      "Model: Manages data and business logic.",
+      "Observer: Synchronizes views with model updates."
+    ]
+  },
+  "sdsd": {
+    "fargment1": {
+      "fragmentName": "dsd",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\CelsiusView.java",
+      "firstLine": 12,
+      "lastLine": 17
+    },
+    "fargment2": {
+      "fragmentName": "sdsd",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\TemperatureConverterApp.java",
+      "firstLine": 16,
+      "lastLine": 19
+    },
+    "fargment3": {
+      "fragmentName": "dsd",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\TemperatureConverterApp.java",
+      "firstLine": 11,
+      "lastLine": 15
+    },
+    "fargment4": {
+      "fragmentName": "dsds",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitView.java",
+      "firstLine": 24,
+      "lastLine": 26
+    },
+    "description": "dsds",
+    "constraints": [
+      "dsd"
+    ]
+  },
+  "mvc": {
+    "fargment1": {
+      "fragmentName": "dsds",
       "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\CelsiusView.java",
       "firstLine": 17,
-      "lastLine": 23,
-      "description": "You should pay attention",
-      "constraints": [
-        "Celsius View"
-      ]
-    }
+      "lastLine": 19
+    },
+    "description": "sdsd",
+    "constraints": [
+      "dsds"
+    ]
+  },
+  "Achref": {
+    "fargment1": {
+      "fragmentName": "aaa",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\CelsiusView.java",
+      "firstLine": 13,
+      "lastLine": 18
+    },
+    "fargment2": {
+      "fragmentName": "aas",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\CelsiusView.java",
+      "firstLine": 26,
+      "lastLine": 32
+    },
+    "description": "aa",
+    "constraints": [
+      "aaa"
+    ]
+  },
+  "yallaa": {
+    "fargment1": {
+      "fragmentName": "yalla",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\CelsiusView.java",
+      "firstLine": 46,
+      "lastLine": 48
+    },
+    "description": "aa",
+    "constraints": [
+      "aa"
+    ]
+  },
+  "oop ": {
+    "fargment1": {
+      "fragmentName": "pp",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\CelsiusView.java",
+      "firstLine": 65,
+      "lastLine": 68
+    },
+    "description": "ppp",
+    "constraints": [
+      "pp"
+    ]
+  },
+  "mlkkj": {
+    "fargment1": {
+      "fragmentName": "sdsd",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\TemperatureConverterApp.java",
+      "firstLine": 16,
+      "lastLine": 19
+    },
+    "description": "sds",
+    "constraints": [
+      "dsds"
+    ]
+  },
+  "loop": {
+    "fargment1": {
+      "fragmentName": "dr",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\TemperatureConverterApp.java",
+      "firstLine": 31,
+      "lastLine": 33
+    },
+    "description": "dd",
+    "constraints": [
+      "dd"
+    ]
+  },
+  "kii": {
+    "fargment1": {
+      "fragmentName": "kk",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitView.java",
+      "firstLine": 12,
+      "lastLine": 17
+    },
+    "fargment2": {
+      "fragmentName": "loo",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitView.java",
+      "firstLine": 24,
+      "lastLine": 27
+    },
+    "description": "kk",
+    "constraints": [
+      "kk"
+    ]
+  },
+  "achref": {
+    "fargment1": {
+      "fragmentName": "achref",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitView.java",
+      "firstLine": 24,
+      "lastLine": 26
+    },
+    "description": "oop",
+    "constraints": [
+      "poo"
+    ]
+  },
+  "achref ": {
+    "fargment1": {
+      "fragmentName": "pooo",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitView.java",
+      "firstLine": 33,
+      "lastLine": 37
+    },
+    "description": "pp",
+    "constraints": [
+      "oop"
+    ]
+  },
+  "achraff": {
+    "fargment1": {
+      "fragmentName": "oop",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitView.java",
+      "firstLine": 43,
+      "lastLine": 45
+    },
+    "description": "pp",
+    "constraints": [
+      "poo"
+    ]
+  },
+  "llm": {
+    "fargment1": {
+      "fragmentName": "mmp",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitView.java",
+      "firstLine": 61,
+      "lastLine": 64
+    },
+    "fargment2": {
+      "fragmentName": "nkj",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitView.java",
+      "firstLine": 52,
+      "lastLine": 54
+    },
+    "description": "mpa",
+    "constraints": [
+      "mmp"
+    ]
+  },
+  "yallaaa": {
+    "fargment1": {
+      "fragmentName": "yallaaaaaaaaaaaaaaaa",
+      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitView.java",
+      "firstLine": 2,
+      "lastLine": 3
+    },
+    "description": "lkkkd",
+    "constraints": [
+      "plpp"
+    ]
   }
 }

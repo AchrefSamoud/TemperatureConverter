@@ -4,6 +4,8 @@ import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+
+@designDecision(fragmentsNames = {"sdsd"})
 public class TemperatureConverterApp extends Application {
 
     @Override

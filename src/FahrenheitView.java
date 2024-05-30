@@ -8,6 +8,8 @@ import javafx.scene.layout.VBox;
  * The FahrenheitView class represents the view component of the temperature converter application
  * that is responsible for displaying the Fahrenheit temperature input field and buttons.
  */
+
+@designDecision(fragmentsNames = {"kk", "achref", "pooo", "oop", "mmp", "yallaaaaaaaaaaaaaaaa"})
 public class FahrenheitView extends VBox {
     private TextField fahrenheitTextField;
     private Button raiseButton;

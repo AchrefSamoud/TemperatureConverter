@@ -4,6 +4,8 @@ import javafx.beans.property.SimpleDoubleProperty;
 /**
  * The TemperatureModel class represents a model for temperature conversion between Celsius and Fahrenheit.
  */
+
+
 public class TemperatureModel {
     private final DoubleProperty celsius = new SimpleDoubleProperty();
     private final DoubleProperty fahrenheit = new SimpleDoubleProperty();

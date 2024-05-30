@@ -6,6 +6,7 @@ import javafx.util.converter.DoubleStringConverter;
 /**
  * The CelsiusController class is responsible for controlling the CelsiusView and updating the TemperatureModel based on user input.
  */
+@designDecision(fragmentsNames = {"Celsius Controller"})
 public class CelsiusController {
     private CelsiusView view;
     private TemperatureModel model;
@@ -23,23 +24,23 @@ public class CelsiusController {
         this.model = model;
 
         // Set action for the raise button
-        view.getRaiseButton().setOnAction(e -> {
-            double celsiusValue = Double.parseDouble(view.getCelsiusTextField().getText());
-            model.setCelsius(celsiusValue + 1);
-        });
+            view.getRaiseButton().setOnAction(e -> {
+                double celsiusValue = Double.parseDouble(view.getCelsiusTextField().getText());
+                model.setCelsius(celsiusValue + 1);
+            });
 
-        // Set action for the lower button
-        view.getLowerButton().setOnAction(event -> model.setCelsius(model.getCelsius() - 1));
+            // Set action for the lower button
+            view.getLowerButton().setOnAction(event -> model.setCelsius(model.getCelsius() - 1));
 
-        // Set action for the enter key press on the Celsius text field
-        view.getCelsiusTextField().setOnKeyPressed(event -> {
-            if (event.getCode() == KeyCode.ENTER) {
-                String newValue = view.getCelsiusTextField().getText();
-                if (!newValue.isEmpty()) {
-                    model.setCelsius(converter.fromString(newValue));
+            // Set action for the enter key press on the Celsius text field
+            view.getCelsiusTextField().setOnKeyPressed(event -> {
+                if (event.getCode() == KeyCode.ENTER) {
+                    String newValue = view.getCelsiusTextField().getText();
+                    if (!newValue.isEmpty()) {
+                        model.setCelsius(converter.fromString(newValue));
+                    }
                 }
-            }
-        });
+            });
     }
 }
    

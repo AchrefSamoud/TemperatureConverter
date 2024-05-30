@@ -10,6 +10,8 @@ import javafx.util.converter.DoubleStringConverter;
  * The CelsiusView class represents a view component for displaying and interacting with Celsius temperature values.
  * It extends the VBox class to organize its child nodes vertically.
  */
+
+@designDecision(fragmentsNames = {"aaa"})
 public class CelsiusView extends VBox {
     private TextField celsiusTextField;
     private TextField fahrenheitTextField;
