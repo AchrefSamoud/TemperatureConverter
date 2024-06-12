@@ -7,6 +7,7 @@ import javafx.scene.layout.VBox;
  * This class represents a view component for a Celsius slider in a temperature converter application.
  * It extends the VBox class and provides methods to access the Celsius slider and the view itself.
  */
+@designDecision(fragmentsNames = {"Celsius Slider View"})
 public class CelsiusSliderView extends VBox {
 
     private final Slider celsiusSlider;
@@ -27,7 +28,6 @@ public class CelsiusSliderView extends VBox {
         celsiusSlider.setShowTickLabels(true);
         celsiusSlider.setMajorTickUnit(20);
         celsiusSlider.setBlockIncrement(5);
-
         VBox box = new VBox(10, new Label("Celsius Slider"), celsiusSlider);
         box.setAlignment(Pos.CENTER);
 

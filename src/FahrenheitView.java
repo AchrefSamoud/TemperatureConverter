@@ -9,7 +9,6 @@ import javafx.scene.layout.VBox;
  * that is responsible for displaying the Fahrenheit temperature input field and buttons.
  */
 
-@designDecision(fragmentsNames = {"kk", "achref", "pooo", "oop", "mmp", "yallaaaaaaaaaaaaaaaa"})
 public class FahrenheitView extends VBox {
     private TextField fahrenheitTextField;
     private Button raiseButton;

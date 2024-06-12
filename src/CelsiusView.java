@@ -11,10 +11,10 @@ import javafx.util.converter.DoubleStringConverter;
  * It extends the VBox class to organize its child nodes vertically.
  */
 
-@designDecision(fragmentsNames = {"aaa"})
+
+@designDecision(fragmentsNames = {"Celsius View ", "Clesius Observer"})
 public class CelsiusView extends VBox {
     private TextField celsiusTextField;
-    private TextField fahrenheitTextField;
     private Button raiseButton;
     private Button lowerButton;
     private DoubleStringConverter converter;
@@ -32,6 +32,9 @@ public class CelsiusView extends VBox {
 
         this.converter = new DoubleStringConverter();
 
+        //yallaaaa
+        //ooooo
+        //tttttttt
         // Bind result label to model's Fahrenheit property
         model.celsiusProperty().addListener((observable, oldValue, newValue) ->
                 celsiusTextField.setText(converter.toString(newValue.doubleValue())));

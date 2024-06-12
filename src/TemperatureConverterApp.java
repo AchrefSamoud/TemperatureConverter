@@ -5,12 +5,16 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 
-@designDecision(fragmentsNames = {"sdsd"})
+@designDecision(fragmentsNames = {"acca", "aaa", "YALAA", "papa", "acc", "aaa", "ppp"})
 public class TemperatureConverterApp extends Application {
 
     @Override
     public void start(Stage primaryStage) {
         // Create an instance of the TemperatureModel class
+        //lore ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        //lore ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        //lore ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        //lore ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
         TemperatureModel model = new TemperatureModel();
         
         // Create instances of the CelsiusView, CelsiusController, FahrenheitView, and FahrenheitController classes
@@ -41,3 +45,23 @@ public class TemperatureConverterApp extends Application {
         launch(args);
     }
 }
+///dsdsdds
+//Dsdds
+///
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///
+// dsdsdsdsdds
