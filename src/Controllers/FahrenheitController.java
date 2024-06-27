@@ -1,3 +1,6 @@
+package Controllers;
+import Model.TemperatureModel;
+import Views.FahrenheitView;
 import javafx.scene.input.KeyCode;
 import javafx.util.converter.DoubleStringConverter;
 
@@ -9,7 +12,9 @@ import javafx.util.converter.DoubleStringConverter;
 
 
 
-@designDecision(fragmentsNames = {"Fahrenheit Controller", "aaa"})
+
+import annotations.DesignDecision;
+@DesignDecision(roles= {"Controller", "View", "Subject", "Observer"})
 public class FahrenheitController {
     private FahrenheitView view;
     private TemperatureModel model;
@@ -50,3 +55,33 @@ System.out.println("FahrenheitController created");
             });
     }
 }
+
+
+
+
+
+
+    //parr
+    //yaaaaaaaa
+    //
+    //
+    //
+    //
+
+
+
+
+    //yattata
+
+    //Aaasa
+
+
+
+
+    //ya semeah
+
+    // ya behi
+
+    //ya tahfounn
+
+    //ya allaaah

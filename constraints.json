@@ -1,59 +1,149 @@
 {
   "MVC": {
-    "fargment1": {
-      "fragmentName": "Celsius Controller",
-      "fragmentRole": "Handles user interaction and updates the model accordingly",
-      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\CelsiusController.java",
-      "firstLine": 26,
-      "lastLine": 42
-    },
-    "fargment2": {
-      "fragmentName": "Fahrenheit Controller",
-      "fragmentRole": "Handles user interaction and updates the model accordingly",
-      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\FahrenheitController.java",
-      "firstLine": 24,
-      "lastLine": 50
-    },
-    "fargment3": {
-      "fragmentName": "Celsius Slider View",
-      "fragmentRole": "Represents the UI component responsible for displaying and allowing user interaction with the Celsius temperature slider",
-      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\CelsiusSliderView.java",
-      "firstLine": 25,
-      "lastLine": 32
-    },
-    "fargment4": {
-      "fragmentName": "Celsius View ",
-      "fragmentRole": "Represents the UI component responsible for displaying and allowing user interaction with the Celsius temperature View",
-      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\CelsiusView.java",
-      "firstLine": 26,
-      "lastLine": 38
-    },
-    "fargment5": {
-      "fragmentName": "Clesius Observer",
-      "fragmentRole": "Registers a listener on the celsiusProperty",
-      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\CelsiusView.java",
-      "firstLine": 38,
-      "lastLine": 39
-    },
-    "description": "Model-View-Controller design pattern implementation for temperature conversion with embedded Observer pattern to synchronize views with model updates.",
-    "constraints": [
-      "Controller: Handles user input and updates the model.",
-      "View: Displays data and allows user interaction.",
-      "Model: Manages data and business logic.",
-      "Observer: Synchronizes views with model updates."
-    ]
+    "MVCTemperatureConverterApp": {
+      "Model": [
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Model\\TemperatureModel.java",
+          "firstLine": 11,
+          "lastLine": 14,
+          "description": "Holds the temperature data"
+        }
+      ],
+      "View": [
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Views\\CelsiusSliderView.java",
+          "firstLine": 28,
+          "lastLine": 35,
+          "description": "Celsius Slider View Components"
+        },
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Views\\CelsiusView.java",
+          "firstLine": 29,
+          "lastLine": 33,
+          "description": "Celsius View Components"
+        },
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Views\\FahrenheitView.java",
+          "firstLine": 25,
+          "lastLine": 31,
+          "description": "Fahrenheit View Components"
+        },
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Controllers\\FahrenheitController.java",
+          "firstLine": 66,
+          "lastLine": 69,
+          "description": "rnt"
+        }
+      ],
+      "Controller": [
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Controllers\\CelsiusController.java",
+          "firstLine": 26,
+          "lastLine": 42,
+          "description": "Controls the ineteraction of the user with the View Components and updates the model accordingly"
+        },
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Controllers\\FahrenheitController.java",
+          "firstLine": 27,
+          "lastLine": 53,
+          "description": "Controls user's interactions  with the Fahrenheit View Components and update the Model accordingly"
+        },
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Controllers\\FahrenheitController.java",
+          "firstLine": 63,
+          "lastLine": 65,
+          "description": "àààà"
+        },
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Controllers\\FahrenheitController.java",
+          "firstLine": 59,
+          "lastLine": 61,
+          "description": "ena"
+        }
+      ]
+    }
   },
-  "poop": {
-    "fargment1": {
-      "fragmentName": "ppp",
-      "fragmentRole": "pp",
-      "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\TemperatureConverterApp.java",
-      "firstLine": 17,
-      "lastLine": 17
-    },
-    "description": "pp",
-    "constraints": [
-      "pp"
-    ]
+  "Observer": {
+    "ObserverTemperatureConverter": {
+      "Subject": [
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Model\\TemperatureModel.java",
+          "firstLine": 22,
+          "lastLine": 23,
+          "description": "Celsius data subject"
+        },
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Model\\TemperatureModel.java",
+          "firstLine": 24,
+          "lastLine": 26,
+          "description": "Fahrenheit data subject"
+        },
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Controllers\\FahrenheitController.java",
+          "firstLine": 74,
+          "lastLine": 74,
+          "description": "yoloo"
+        },
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Controllers\\FahrenheitController.java",
+          "firstLine": 76,
+          "lastLine": 76,
+          "description": "charouf"
+        },
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Controllers\\FahrenheitController.java",
+          "firstLine": 81,
+          "lastLine": 81,
+          "description": "yasemah"
+        },
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Controllers\\FahrenheitController.java",
+          "firstLine": 85,
+          "lastLine": 85,
+          "description": "tihaya"
+        },
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Controllers\\FahrenheitController.java",
+          "firstLine": 87,
+          "lastLine": 87,
+          "description": "aaaa"
+        }
+      ],
+      "Observer": [
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Views\\CelsiusView.java",
+          "firstLine": 36,
+          "lastLine": 37,
+          "description": "observer on the celsius model property"
+        },
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Views\\CelsiusSliderView.java",
+          "firstLine": 38,
+          "lastLine": 39,
+          "description": "Observer on the Celiusius model property"
+        },
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Views\\FahrenheitView.java",
+          "firstLine": 34,
+          "lastLine": 35,
+          "description": "observer on the fahrenheit model property"
+        },
+        {
+          "filePath": "c:\\Users\\HP\\Desktop\\JavaProjects\\TemperatureConverter\\TemperatureConverter\\src\\Controllers\\FahrenheitController.java",
+          "firstLine": 83,
+          "lastLine": 83,
+          "description": "ttt"
+        }
+      ],
+      "relationships": {
+        "Comprises": [
+          "ObserverTemperatureConverter",
+          "MVCTemperatureConverterApp"
+        ],
+        "Conflicts with": [
+          "MVCTemperatureConverterApp"
+        ]
+      }
+    }
   }
 }

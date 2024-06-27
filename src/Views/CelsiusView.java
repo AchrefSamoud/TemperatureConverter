@@ -1,4 +1,5 @@
-
+package Views;
+import Model.TemperatureModel;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -11,8 +12,8 @@ import javafx.util.converter.DoubleStringConverter;
  * It extends the VBox class to organize its child nodes vertically.
  */
 
-
-@designDecision(fragmentsNames = {"Celsius View ", "Clesius Observer"})
+import annotations.DesignDecision;
+@DesignDecision(roles= {"Observer", "View"})
 public class CelsiusView extends VBox {
     private TextField celsiusTextField;
     private Button raiseButton;
@@ -32,9 +33,7 @@ public class CelsiusView extends VBox {
 
         this.converter = new DoubleStringConverter();
 
-        //yallaaaa
-        //ooooo
-        //tttttttt
+       
         // Bind result label to model's Fahrenheit property
         model.celsiusProperty().addListener((observable, oldValue, newValue) ->
                 celsiusTextField.setText(converter.toString(newValue.doubleValue())));

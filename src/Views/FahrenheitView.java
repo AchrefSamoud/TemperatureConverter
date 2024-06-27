@@ -1,19 +1,20 @@
+package Views;
+import Model.TemperatureModel;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.util.converter.DoubleStringConverter;
 import javafx.scene.layout.VBox;
 
-/**
- * The FahrenheitView class represents the view component of the temperature converter application
- * that is responsible for displaying the Fahrenheit temperature input field and buttons.
- */
 
+
+import annotations.DesignDecision;
+@DesignDecision(roles= {"Observer", "Controller"})
 public class FahrenheitView extends VBox {
-    private TextField fahrenheitTextField;
-    private Button raiseButton;
-    private Button lowerButton;
-    private DoubleStringConverter converter;
+        private TextField fahrenheitTextField;
+        private Button raiseButton;
+        private Button lowerButton;
+        private DoubleStringConverter converter;
 
     /**
      * Constructs a new FahrenheitView object with the specified TemperatureModel.

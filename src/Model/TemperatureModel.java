@@ -1,3 +1,4 @@
+package Model;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
 
@@ -6,7 +7,9 @@ import javafx.beans.property.SimpleDoubleProperty;
  */
 
 
-@designDecision(fragmentsNames = {"lll", "sam", "aa", "sas", "aa", "ppo", "aa", "sdsd", "setter", "Role1", "poo"})
+
+import annotations.DesignDecision;
+@DesignDecision(roles= {"Model", "Subject"})
 public class TemperatureModel {
     private final DoubleProperty celsius = new SimpleDoubleProperty();
     private final DoubleProperty fahrenheit = new SimpleDoubleProperty();
@@ -77,7 +80,3 @@ public class TemperatureModel {
         this.fahrenheit.set(fahrenheit);
     }
 }
-//dsdsd
-//Dsdsds
-//Dsds
-//dsdsd

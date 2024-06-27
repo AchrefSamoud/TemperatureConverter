@@ -1,8 +1,13 @@
-
+package Controllers;
+import Views.CelsiusSliderView;
+import Model.TemperatureModel;
 /**
  * The CelsiusSliderController class is responsible for controlling the CelsiusSliderView
  * and updating the TemperatureModel based on the slider value.
  */
+
+import annotations.DesignDecision;
+@DesignDecision(roles= {"View", "Controller", "Singleton"})
 public class CelsiusSliderController {
     private CelsiusSliderView view;
     private TemperatureModel model;
@@ -21,3 +26,17 @@ public class CelsiusSliderController {
         view.getCelsiusSlider().valueProperty().bindBidirectional(model.celsiusProperty());
     }
 }
+
+
+//aaaaaaaa
+//Aaa
+//Aaa
+
+////
+////
+////////
+
+//////
+/////
+///////
+////

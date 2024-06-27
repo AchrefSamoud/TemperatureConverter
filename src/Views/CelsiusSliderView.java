@@ -1,3 +1,5 @@
+package Views;
+import Model.TemperatureModel;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
@@ -7,7 +9,8 @@ import javafx.scene.layout.VBox;
  * This class represents a view component for a Celsius slider in a temperature converter application.
  * It extends the VBox class and provides methods to access the Celsius slider and the view itself.
  */
-@designDecision(fragmentsNames = {"Celsius Slider View"})
+import annotations.DesignDecision;
+@DesignDecision(roles= {"Observer", "Singleton"})
 public class CelsiusSliderView extends VBox {
 
     private final Slider celsiusSlider;
@@ -57,3 +60,6 @@ public class CelsiusSliderView extends VBox {
         return celsiusSlider;
     }
 }
+
+// aaaaaaaaaaaaa
+//Aaaaaaaa

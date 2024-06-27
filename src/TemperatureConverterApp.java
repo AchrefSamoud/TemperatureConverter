@@ -1,3 +1,10 @@
+import Controllers.CelsiusController;
+import Controllers.CelsiusSliderController;
+import Controllers.FahrenheitController;
+import Model.TemperatureModel;
+import Views.CelsiusSliderView;
+import Views.CelsiusView;
+import Views.FahrenheitView;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -5,16 +12,13 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 
-@designDecision(fragmentsNames = {"acca", "aaa", "YALAA", "papa", "acc", "aaa", "ppp"})
+import annotations.DesignDecision;
+@DesignDecision(roles= {"View", "Singleton"})
 public class TemperatureConverterApp extends Application {
 
     @Override
     public void start(Stage primaryStage) {
         // Create an instance of the TemperatureModel class
-        //lore ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-        //lore ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-        //lore ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-        //lore ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
         TemperatureModel model = new TemperatureModel();
         
         // Create instances of the CelsiusView, CelsiusController, FahrenheitView, and FahrenheitController classes
@@ -45,18 +49,17 @@ public class TemperatureConverterApp extends Application {
         launch(args);
     }
 }
-///dsdsdds
-//Dsdds
+
+
+
+
+
+
+
+
+
 ///
-
-
-
-
-
-
-
-
-
+//
 
 
 

@@ -1,10 +1,13 @@
-// TemperatureConverterController.java
+package Controllers;
 import javafx.scene.input.KeyCode;
 import javafx.util.converter.DoubleStringConverter;
+import Views.CelsiusView;
+import Model.TemperatureModel;
 /**
  * The CelsiusController class is responsible for controlling the CelsiusView and updating the TemperatureModel based on user input.
  */
-@designDecision(fragmentsNames = {"Celsius Controller"})
+import annotations.DesignDecision;
+@DesignDecision(roles= {"Observer", "Controller", "View", "Singleton"})
 public class CelsiusController {
     private CelsiusView view;
     private TemperatureModel model;
@@ -19,7 +22,6 @@ public class CelsiusController {
         this.converter = new DoubleStringConverter();
         this.view = view;
         this.model = model;
-System.out.println("CelsiusController created");
         // Set action for the raise button
             view.getRaiseButton().setOnAction(e -> {
                 double celsiusValue = Double.parseDouble(view.getCelsiusTextField().getText());
