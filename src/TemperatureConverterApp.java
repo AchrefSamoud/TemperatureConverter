@@ -10,10 +10,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-
-
 import annotations.DesignDecision;
-@DesignDecision(roles= {"View", "Singleton"})
 public class TemperatureConverterApp extends Application {
 
     @Override
@@ -57,14 +54,3 @@ public class TemperatureConverterApp extends Application {
 
 
 
-
-///
-//
-
-
-
-
-
-
-///
-// dsdsdsdsdds

@@ -13,7 +13,7 @@ import javafx.util.converter.DoubleStringConverter;
  */
 
 import annotations.DesignDecision;
-@DesignDecision(roles= {"Observer", "View"})
+@DesignDecision(roles= {"ObserverTemperatureConverter.Observer", "MVCTemperatureConverterApp.View"})
 public class CelsiusView extends VBox {
     private TextField celsiusTextField;
     private Button raiseButton;
@@ -28,9 +28,8 @@ public class CelsiusView extends VBox {
     public CelsiusView(TemperatureModel model) {
         Label celsiusLabel = new Label("Celsius:");
         celsiusTextField = new TextField();
-        this.raiseButton = new Button("Raise");
+        this.raiseButton = new Button("R aise");
         this.lowerButton = new Button("Lower");
-
         this.converter = new DoubleStringConverter();
 
        

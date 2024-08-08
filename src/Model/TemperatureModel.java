@@ -1,13 +1,6 @@
 package Model;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
-
-/**
- * The TemperatureModel class represents a model for temperature conversion between Celsius and Fahrenheit.
- */
-
-
-
 import annotations.DesignDecision;
 @DesignDecision(roles= {"Model", "Subject"})
 public class TemperatureModel {

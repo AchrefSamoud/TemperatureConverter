@@ -9,7 +9,7 @@ import javafx.scene.layout.VBox;
 
 
 import annotations.DesignDecision;
-@DesignDecision(roles= {"Observer", "Controller"})
+@DesignDecision(roles= {"ObserverTemperatureConverter.Observer","MVCTemperatureConverterApp.View"})
 public class FahrenheitView extends VBox {
         private TextField fahrenheitTextField;
         private Button raiseButton;

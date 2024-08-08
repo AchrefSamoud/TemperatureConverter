@@ -14,7 +14,7 @@ import javafx.util.converter.DoubleStringConverter;
 
 
 import annotations.DesignDecision;
-@DesignDecision(roles= {"Controller", "View", "Subject", "Observer"})
+@DesignDecision(roles= {"MVCTemperatureConverterApp.Controller"})
 public class FahrenheitController {
     private FahrenheitView view;
     private TemperatureModel model;
@@ -56,32 +56,3 @@ System.out.println("FahrenheitController created");
     }
 }
 
-
-
-
-
-
-    //parr
-    //yaaaaaaaa
-    //
-    //
-    //
-    //
-
-
-
-
-    //yattata
-
-    //Aaasa
-
-
-
-
-    //ya semeah
-
-    // ya behi
-
-    //ya tahfounn
-
-    //ya allaaah

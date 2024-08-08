@@ -7,7 +7,7 @@ import Model.TemperatureModel;
  */
 
 import annotations.DesignDecision;
-@DesignDecision(roles= {"View", "Controller", "Singleton"})
+@DesignDecision(roles= {"MVCTemperatureConverterApp.Controller"})
 public class CelsiusSliderController {
     private CelsiusSliderView view;
     private TemperatureModel model;
@@ -27,16 +27,3 @@ public class CelsiusSliderController {
     }
 }
 
-
-//aaaaaaaa
-//Aaa
-//Aaa
-
-////
-////
-////////
-
-//////
-/////
-///////
-////

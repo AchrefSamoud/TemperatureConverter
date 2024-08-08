@@ -7,7 +7,7 @@ import Model.TemperatureModel;
  * The CelsiusController class is responsible for controlling the CelsiusView and updating the TemperatureModel based on user input.
  */
 import annotations.DesignDecision;
-@DesignDecision(roles= {"Observer", "Controller", "View", "Singleton"})
+@DesignDecision(roles= {"MVCTemperatureConverterApp.Controller"})
 public class CelsiusController {
     private CelsiusView view;
     private TemperatureModel model;
@@ -26,6 +26,8 @@ public class CelsiusController {
             view.getRaiseButton().setOnAction(e -> {
                 double celsiusValue = Double.parseDouble(view.getCelsiusTextField().getText());
                 model.setCelsius(celsiusValue + 1);
+
+                
             });
 
             // Set action for the lower button

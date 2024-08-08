@@ -7,7 +7,7 @@
       "Controller"
     ],
     "constraints": [
-      "he model must not be aware of the view or the controllers. It should be independent and only handle the data",
+      "The model must not be aware of the view or the controllers. It should be independent and only handle the data",
       "The view is responsible for rendering the user interface and presenting data to the user.",
       "The controller acts as a mediator between the view and the model"
     ]
@@ -17,9 +17,9 @@
     "roles": [
       "Subject",
       "Observer"
-    ],  
+    ],
     "constraints": [
-       "Subject and observers should be loosely coupled. Observers are not aware of each other's existence.",
+      "Subject and observers should be loosely coupled. Observers are not aware of each other's existence.",
       "Avoid excessive updates. Notify observers only when the state change is relevant to them."
     ]
   },
@@ -44,7 +44,6 @@
     "constraints": [
       "The creator class should not instantiate the product directly but should rely on the factory method to do so.",
       "The product interface should be common to all objects created by the concrete creators.",
-
       "Creator class declares the factory method that returns new product objects.",
       "ConcreteCreator class overrides the factory method to return an instance of a ConcreteProduct.",
       "Product class defines the interface of objects the factory method creates.",
@@ -65,5 +64,15 @@
       "The abstract product class declares the interface for the products created by the factory method.",
       "The concrete product class implements the abstract product interface."
     ]
+  },
+  {
+    "name": "Adapter",
+    "roles": [
+      "Adapter",
+      "Adaptee1",
+      "Adaptee2",
+      "Target"
+    ],
+    "constraints": []
   }
 ]
